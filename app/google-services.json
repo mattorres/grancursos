@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "97660186664",
+    "firebase_url": "https://app-gran-curos.firebaseio.com",
+    "project_id": "app-gran-curos",
+    "storage_bucket": "app-gran-curos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:97660186664:android:764d2cb7da3280eb",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "97660186664-3mbve6v2d3c8rndq9nfip5ta5sqp8k1e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDfrUyUE-6CWBAVU1BTUpzmlVtykyc2wg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,23 @@
+page-home {
+  .item-md.item-block .item-inner {
+    border-top: 1px solid #dedede;
+    border-right: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 50%;
+    color: #fff;
+    background-color: color($colors, primary);
+  }
+
+  ion-icon {
+    margin-right: 5%;
+  }
+
+  .item-block {
+    min-height: 9.4rem;
+  }
+}

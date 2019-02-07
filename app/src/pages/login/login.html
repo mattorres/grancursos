@@ -1,0 +1,88 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title text-center></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="logo">
+    <img src="assets/imgs/logo-gran-cursos.png" />
+  </div>
+  <div class="form-login">
+    <form (ngSubmit)="login()" [formGroup]="loginForm">
+      <ion-grid>
+        <ion-row>
+          <ion-col col-12 col-sm-12 col-md-12 col-lg-12>
+            <ion-list inset>
+              <ion-item
+                [ngClass]="{
+                  invalid: loginForm.controls.email.hasError('*', [
+                    'touched',
+                    'dirty'
+                  ])
+                }"
+              >
+                <ion-input
+                  type="text"
+                  placeholder="Email"
+                  formControlName="email"
+                ></ion-input>
+              </ion-item>
+
+              <ion-item
+                [ngClass]="{
+                  invalid: loginForm.controls.password.hasError('*', [
+                    'touched'
+                  ])
+                }"
+              >
+                <ion-input
+                  type="password"
+                  placeholder="Password"
+                  formControlName="password"
+                ></ion-input>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <button
+        ion-button
+        block
+        round
+        [disabled]="!loginForm.valid"
+        color="primary"
+        (click)="login()"
+      >
+        Logar
+      </button>
+    </form>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid align-self-center>
+      <ion-row align-items-center>
+        <ion-col col-12 text-center>
+          <p text-center>Logar usando as mídias sociais</p>
+        </ion-col>
+        <ion-col text-center col-6 text-right>
+          <button ion-button round (click)="loginFacebook()" color="facebook">
+            <ion-icon color="light" class="fa-facebook-square"></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col text-center col-6 text-left>
+          <button ion-button round (click)="loginGoogle()" color="danger">
+            <ion-icon color="light" class="fa-google"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

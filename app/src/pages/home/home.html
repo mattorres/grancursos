@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-6>
+        <button ion-item text-center icon-right (click)="noticiasPage()">
+          <ion-icon class="fa-commenting-o"></ion-icon> Noticias
+        </button>
+      </ion-col>
+      <ion-col col-6>
+        <button ion-item text-center icon-right (click)="eventoPage()">
+          <ion-icon class="fa-calendar"></ion-icon> Eventos
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

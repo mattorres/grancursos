@@ -30,7 +30,6 @@ export class InterceptorProvider implements HttpInterceptor {
 
     return Observable.fromPromise(promise).mergeMap(token => {
       let clonedReq = this.addToken(request, token);
-      console.log(clonedReq);
       return next.handle(clonedReq).pipe(
         catchError(error => {
           // Perhaps display an error for specific status codes here already?

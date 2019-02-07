@@ -49,9 +49,9 @@ export class NoticiasPage implements OnInit {
       res => {
         this.noticias = res.eventos;
         loading.dismiss();
-        console.log(this.noticias);
       },
       error => {
+        loading.dismiss();
         if (error.status == 401) {
           loading.dismiss();
         }

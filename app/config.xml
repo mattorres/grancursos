@@ -89,5 +89,6 @@
         <variable name="APP_ID" value="772677299761387" />
         <variable name="APP_NAME" value="grancursos" />
     </plugin>
+    <allow-navigation href="http://192.168.0.111:8100" sessionid="9dc3e029" />
     <engine name="android" spec="7.0.0" />
 </widget>
